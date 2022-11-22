@@ -1,0 +1,11 @@
+<!DOCTYPE sonar_configuration>
+<Sonar Rotation="0" Size="50 35 50" LocPos="0 0 0" Id="0" Color="1 0.5 0" NumOfRec="7">
+ <Transmitter Rotation="0" Size="5 5 5" LocPos="0 0 23.8095"/>
+ <Receiver Rotation="0" Size="5 5 12.5" LocPos="0 -50 0" Id="1"/>
+ <Receiver Rotation="0" Size="5 5 12.5" LocPos="0 -50 0" Id="2"/>
+ <Receiver Rotation="0" Size="5 5 12.5" LocPos="0 -50 0" Id="3"/>
+ <Receiver Rotation="0" Size="5 5 12.5" LocPos="0 -50 0" Id="4"/>
+ <Receiver Rotation="0" Size="5 5 12.5" LocPos="0 -50 0" Id="5"/>
+ <Receiver Rotation="0" Size="5 5 12.5" LocPos="0 -50 0" Id="6"/>
+ <Receiver Rotation="0" Size="5 5 12.5" LocPos="0 -50 0" Id="7"/>
+</Sonar>
