@@ -1,0 +1,23 @@
+<!DOCTYPE platform_configuration>
+<Platform LocPos="0 0 0" NumOfSonars="2" Size="250 140 250">
+ <Sonar Rotation="0" Id="0" LocPos="-18 158 100" Size="50 35 50" Color="1 0.5 0">
+  <Transmitter Rotation="0" LocPos="0 0 23.8095" GlPos="-18 158 123.81" Size="5 5 5"/>
+  <Receiver Rotation="0" Id="1" LocPos="0 -50 0" GlPos="-18 108 100" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="2" LocPos="0 -50 0" GlPos="-18 108 100" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="3" LocPos="0 -50 0" GlPos="-18 108 100" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="4" LocPos="0 -50 0" GlPos="-18 108 100" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="5" LocPos="0 -50 0" GlPos="-18 108 100" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="6" LocPos="0 -50 0" GlPos="-18 108 100" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="7" LocPos="0 -50 0" GlPos="-18 108 100" Size="5 5 12.5"/>
+ </Sonar>
+ <Sonar Rotation="0" Id="1" LocPos="0 -150 125" Size="50 35 50" Color="1 0.5 0">
+  <Transmitter Rotation="0" LocPos="0 0 23.8095" GlPos="0 -150 148.809" Size="5 5 5"/>
+  <Receiver Rotation="0" Id="1" LocPos="0 -50 0" GlPos="0 -200 125" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="2" LocPos="0 -50 0" GlPos="0 -200 125" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="3" LocPos="0 -50 0" GlPos="0 -200 125" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="4" LocPos="0 -50 0" GlPos="0 -200 125" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="5" LocPos="0 -50 0" GlPos="0 -200 125" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="6" LocPos="0 -50 0" GlPos="0 -200 125" Size="5 5 12.5"/>
+  <Receiver Rotation="0" Id="7" LocPos="0 -50 0" GlPos="0 -200 125" Size="5 5 12.5"/>
+ </Sonar>
+</Platform>

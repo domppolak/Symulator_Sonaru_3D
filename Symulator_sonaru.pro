@@ -10,72 +10,81 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    objtoscene.cpp \
-    platformmodel.cpp \
-    qcustomplot/qcustomplot.cpp \
-    sonarmodel.cpp \
-    src/PlatformConf/platformconfscene.cpp \
-    src/PlatformConf/platformconfwindow.cpp \
-    src/Scene/camera.cpp \
-    src/Scene/model.cpp \
-    src/SonarConf/signalconfwindown.cpp \
-    src/SonarConf/sonarconfscene.cpp \
-    src/SonarConf/sonarconfwindow.cpp \
-    src/changesizewindow.cpp \
     src/filemanager.cpp \
     src/main.cpp \
-    src/mainscene.cpp \
-    src/mainwindow.cpp \
-    src/platform.cpp \
-    src/receiver.cpp \
-    src/sonar.cpp \
-    src/transmittedsignal.cpp \
-    src/transmitter.cpp \
-    src/vector3D.cpp
+    src/models/flatsurfacemodel.cpp \
+    src/models/gridmodel.cpp \
+    src/models/model.cpp \
+    src/models/platformmodel.cpp \
+    src/models/pointmodel.cpp \
+    src/models/sonarmodel.cpp \
+    src/models/stakemodel.cpp \
+    src/scene/camera.cpp \
+    src/scene/mainscene.cpp \
+    src/scene/platformconfscene.cpp \
+    src/scene/sonarconfscene.cpp \
+    src/sim/platform.cpp \
+    src/sim/receiver.cpp \
+    src/sim/sonar.cpp \
+    src/sim/transmittedsignal.cpp \
+    src/sim/transmitter.cpp \
+    src/windows/changesizewindow.cpp \
+    src/windows/mainwindow.cpp \
+    src/windows/objtoscene.cpp \
+    src/windows/platformconfwindow.cpp \
+    src/windows/signalconfwindown.cpp \
+    src/windows/sonarconfwindow.cpp \
+    qcustomplot/qcustomplot.cpp
 
 HEADERS += \
-    inc/PlatformConf/platformconfscene.hh \
-    inc/PlatformConf/platformconfwindow.hh \
-    inc/Scene/camera.hh \
-    inc/Scene/model.hh \
-    inc/SonarConf/signalconfwindown.hh \
-    inc/SonarConf/sonarconfscene.hh \
-    inc/SonarConf/sonarconfwindow.hh \
-    inc/changesizewindow.hh \
+ inc/constant.hh \
     inc/filemanager.hh \
-    inc/mainscene.hh \
-    inc/mainwindow.hh \
-    inc/platform.hh \
-    inc/receiver.hh \
-    inc/sonar.hh \
-    inc/transmittedsignal.hh \
-    inc/transmitter.hh \
-    inc/vector3D.hh \
-    objtoscene.hh \
-    platformmodel.hh \
+ inc/models/flatsurfacemodel.hh \
+ inc/models/gridmodel.hh \
+    inc/models/model.hh \
+    inc/models/platformmodel.hh \
+ inc/models/pointmodel.hh \
+    inc/models/sonarmodel.hh \
+ inc/models/stakemodel.hh \
+    inc/scene/camera.hh \
+    inc/scene/mainscene.hh \
+    inc/scene/platformconfscene.hh \
+    inc/scene/sonarconfscene.hh \
+    inc/sim/platform.hh \
+    inc/sim/receiver.hh \
+    inc/sim/sonar.hh \
+    inc/sim/transmittedsignal.hh \
+    inc/sim/transmitter.hh \
+    inc/windows/changesizewindow.hh \
+    inc/windows/mainwindow.hh \
+    inc/windows/objtoscene.hh \
+    inc/windows/platformconfwindow.hh \
+    inc/windows/signalconfwindown.hh \
+    inc/windows/sonarconfwindow.hh \
     qcustomplot/qcustomplot.h \
-    sonarmodel.hh
 
 FORMS += \
     forms/changesizewindow.ui \
     forms/mainwindow.ui \
+    forms/objtoscene.ui \
     forms/signalconfwindown.ui \
     forms/sonarConfWindow.ui \
     forms/platformconfwindow.ui \
-    objtoscene.ui
 
 TRANSLATIONS += \
     translation/Symulator_sonaru_pl_PL.ts
 
 INCLUDEPATH += \
     inc\
-    inc/PlatformConf\
-    inc/Scene\
-    inc/SonarConf\
+    inc/models \
+    inc/scene \
+    inc/sim \
+    inc/windows \
     src\
-    src/PlatformConf\
-    src/Scene\
-    src/SonarConf\
+    src/models \
+    src/scene \
+    src/sim \
+    src/windows \
     forms\
     translation\
 

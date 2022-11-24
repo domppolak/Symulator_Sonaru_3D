@@ -9,7 +9,7 @@ FileManager::FileManager()
 
 }
 
-void FileManager::saveSonarConf(QFile &file, Sonar const &sonar)
+bool FileManager::saveSonarConf(QFile &file, Sonar const &sonar)
 {
     QDomDocument xml("sonar_configuration");
 
@@ -44,22 +44,24 @@ void FileManager::saveSonarConf(QFile &file, Sonar const &sonar)
     QTextStream output(&file);
     output << xml.toString();
     qDebug() << "koniec";
+
+    return true;
 }
 
-void FileManager::readSonarConf(QFile &file, Sonar &sonar)
+bool FileManager::readSonarConf(QFile &file, Sonar &sonar)
 {
 
     QDomDocument xml;
 
     if(!xml.setContent(&file)){
         qDebug() << " Failed to parse the file into a DOM tree.";
-        return;
+        return false;
     }
 
     QDomElement root = xml.documentElement();
     if(root.tagName() != "Sonar"){
         qDebug() << "Sonar item not found";
-        return;
+        return false;
     }
 
     QString sonar_id = root.attribute("Id", "0");
@@ -102,9 +104,11 @@ void FileManager::readSonarConf(QFile &file, Sonar &sonar)
         }
         node = node.nextSibling().toElement();
    }
+
+    return true;
 }
 
-void FileManager::savePlatformConf(QFile &file, Platform const &platform)
+bool FileManager::savePlatformConf(QFile &file, Platform const &platform)
 {
     QDomDocument xml("platform_configuration");
 
@@ -151,21 +155,23 @@ void FileManager::savePlatformConf(QFile &file, Platform const &platform)
 
     QTextStream output(&file);
     output << xml.toString();
+
+    return true;
 }
 
-void FileManager::readPlatformConf(QFile &file, Platform &platform)
+bool FileManager::readPlatformConf(QFile &file, Platform &platform)
 {
     QDomDocument xml;
 
     if(!xml.setContent(&file)){
         qDebug() << " Failed to parse the file into a DOM tree.";
-        return;
+        return false;
     }
 
     QDomElement root = xml.documentElement();
     if(root.tagName() != "Platform"){
         qDebug() << "Platform item not found";
-        return;
+        return false;
     }
 
     QString platfrm_size = root.attribute("Size", "0 0 0");
@@ -228,6 +234,8 @@ void FileManager::readPlatformConf(QFile &file, Platform &platform)
         platform.addSonar(sonar);
         node = node.nextSibling().toElement();
    }
+
+    return true;
 }
 
 QVector3D FileManager::qStringToQVector3D(QString str)

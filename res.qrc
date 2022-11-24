@@ -4,5 +4,7 @@
         <file>shaders/color_shader.vert</file>
         <file>shaders/color_shader_platform.frag</file>
         <file>shaders/color_shader_platform.vert</file>
+        <file>shaders/color_shader_mainScene.vert</file>
+        <file>shaders/color_shader_mainScene.frag</file>
     </qresource>
 </RCC>

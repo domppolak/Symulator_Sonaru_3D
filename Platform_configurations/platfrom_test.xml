@@ -1,0 +1,13 @@
+<!DOCTYPE platform_configuration>
+<Platform Size="250 140 250" NumOfSonars="1" LocPos="0 0 0">
+ <Sonar Size="50 35 50" Color="1 0.5 0" Rotation="0" LocPos="0 150 100" Id="0">
+  <Transmitter Size="5 5 5" Rotation="0" LocPos="0 0 23.8095" GlPos="0 150 123.81"/>
+  <Receiver Size="5 5 12.5" Rotation="0" LocPos="0 -50 0" Id="1" GlPos="0 100 100"/>
+  <Receiver Size="5 5 12.5" Rotation="0" LocPos="0 -50 0" Id="2" GlPos="0 100 100"/>
+  <Receiver Size="5 5 12.5" Rotation="0" LocPos="0 -50 0" Id="3" GlPos="0 100 100"/>
+  <Receiver Size="5 5 12.5" Rotation="0" LocPos="0 -50 0" Id="4" GlPos="0 100 100"/>
+  <Receiver Size="5 5 12.5" Rotation="0" LocPos="0 -50 0" Id="5" GlPos="0 100 100"/>
+  <Receiver Size="5 5 12.5" Rotation="0" LocPos="0 -50 0" Id="6" GlPos="0 100 100"/>
+  <Receiver Size="5 5 12.5" Rotation="0" LocPos="0 -50 0" Id="7" GlPos="0 100 100"/>
+ </Sonar>
+</Platform>
